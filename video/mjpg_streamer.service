@@ -1,0 +1,11 @@
+[Unit]
+Description=mjpg-streamer daemon
+
+[Service]
+Type=simple
+ExecStart=/home/alarm/2017_steamworks/video/stream.sh
+Restart=always
+RestartSec=15
+
+[Install]
+WantedBy=multi-user.target
